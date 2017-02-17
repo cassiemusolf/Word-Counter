@@ -18,7 +18,7 @@
 * _Write two of the same words and return the integer 2.
   input: "dog dog" output: 2_
   This input is a step to be able to count and add up how many times a word is repeated without having to sift through other words as well.
-* _Take a string with multiple words and count if there are    repeated words.
+* _Take a string with multiple words and count if there are repeated words.
   input: "I have a dog named Bozo. My dog loves to go on hikes." output: 2_
   This spec now moves to take a longer inputted string and will look through each word in the string to see if it matches the selected word. If so, it will add the number of times it's found.
 * _Take in to consideration special cases such as lowercase and uppercase.
