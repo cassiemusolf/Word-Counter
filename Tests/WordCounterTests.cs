@@ -58,7 +58,7 @@ namespace WordCounterApp.Objects
       //Act
       int result = testRepeatCounter.CountRepeats();
       //Assert
-      Assert.Equal(13, result);
+      Assert.Equal(2, result);
     }
   }
 }
