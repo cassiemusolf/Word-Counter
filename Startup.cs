@@ -5,7 +5,7 @@ using Nancy;
 using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 
-namespace WordCounterApp
+namespace WordCounterApp.Objects
 {
   public class Startup
   {

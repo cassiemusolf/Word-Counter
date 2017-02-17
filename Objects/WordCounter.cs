@@ -7,6 +7,16 @@ namespace WordCounterApp.Objects
   public class RepeatCounter
   {
     public string _userString;
+    public string _findWord;
+    public string _result;
+
+
+    //Constructor
+    public RepeatCounter(string userString, string findWord)
+    {
+      _userString = userString;
+      _findWord = findWord;
+    }
 
     //Getter
     public string GetUserString()
@@ -14,10 +24,9 @@ namespace WordCounterApp.Objects
       return _userString;
     }
 
-    //Constructor
-    public RepeatCounter(string newUserString)
+    public string GetFindWord()
     {
-      _userString = newUserString;
+      return _findWord;
     }
 
     //Main Method
@@ -25,10 +34,11 @@ namespace WordCounterApp.Objects
     {
       string[] array = GetUserString().ToLower().Split(' ', '.', ',', '!', '?');
 
+      string searchWord = GetFindWord();
       int result = 0;
       foreach(string word in array)
       {
-        if (word == "dog")
+        if (word == searchWord)
         {
         result += 1;
       }
