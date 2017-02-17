@@ -14,8 +14,6 @@ namespace WordCounterApp.Objects
       Post["/results"] = _ => {
         string userString = Request.Form["user-string"];
         string findWord = Request.Form["find-word"];
-        // RepeatCounter newUserString = new RepeatCounter(userString);
-        // RepeatCounter newFindWord = new RepeatCounter(findWord);
         RepeatCounter newCounter = new RepeatCounter(userString, findWord);
         int result = newCounter.CountRepeats();
         return View["results.cshtml", result];
