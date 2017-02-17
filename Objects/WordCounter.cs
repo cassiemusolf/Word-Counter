@@ -23,7 +23,7 @@ namespace WordCounterApp.Objects
     //Main Method
     public int CountRepeats()
     {
-      string[] array = GetUserString().Split(' ');
+      string[] array = GetUserString().ToLower().Split(' ', '.');
 
       int result = 0;
       foreach(string word in array)

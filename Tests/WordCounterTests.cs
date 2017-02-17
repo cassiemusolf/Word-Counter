@@ -60,5 +60,16 @@ namespace WordCounterApp.Objects
       //Assert
       Assert.Equal(2, result);
     }
+    [Fact]
+    public void CountRepeats_ReturnCountForToLowercase_Number()
+    {
+      //Arrange
+      string userWord = "I have a DOG named Bozo. My dog loves to go on hikes! I love my dog .";
+      RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
+      //Act
+      int result = testRepeatCounter.CountRepeats();
+      //Assert
+      Assert.Equal(3, result);
+    }
   }
 }
