@@ -6,13 +6,28 @@
 
 ## Specifications
 
-* _
-* _
-* _
+* _Take user input of one letter and return it back.
+  input: 'a' output: 'a'_
+  This is the simplest full behavior because I need the program to recognize the user's input and be able to return something back to them. In this case, starting with returning the recognized input of only one letter would be the most simple.
+* _Take user input of a word and return it back to them.
+  input: "dog" output: "dog"_
+  This is the next most simple because, again, it is recognizing the user's word and simply returning them back their word.
+* _Take user inputted word and return to them an integer.
+  input: "dog" output: 1_
+  This spec moves from returning a single letter or word back, to returning an integer that will end up corresponding to counting the word.
+* _Write two of the same words and return the integer 2.
+  input: "dog dog" output: 2_
+  This input is a step to be able to count and add up how many times a word is repeated without having to sift through other words as well.
+* _Take a string with multiple words and count if there are    repeated words.
+  input: "I have a dog named Bozo. My dog loves to go on hikes." output: 2_
+  This spec now moves to take a longer inputted string and will look through each word in the string to see if it matches the selected word. If so, it will add the number of times it's found.
+* _Take in to consideration special cases such as lowercase and uppercase.
+input: "DOG" output: 1_
+  This spec will take the input of a capitalized word but be able to read it when the word "dog", in lowercase, is the word selected to be counted.
 
 ## Description
 
-_This web application was built in order to take a user's inputted sentence and another input that selects a word within that sentence. The application will take that word and count how many times it is repeated within the user's inputted text._
+_This web application was built in order to take a user's inputted string and another input that selects a word within that string. The application will take that word and count how many times it is repeated within the user's inputted text._
 
 ## Setup/Installation Requirements
 
