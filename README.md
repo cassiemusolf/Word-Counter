@@ -31,15 +31,14 @@ _This web application was built in order to take a user's inputted string and an
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Connect to browser_
+* _Load localhost page_
+* _Type in piece of text_
+* _Type in word you want counted within your text_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no _
 
 ## Support and contact details
 
@@ -47,7 +46,10 @@ _Please feel free to contact me for questions at cassiemusolf@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _C#_
+* _CSS_
+* _Nancy_
+* _HTML_
 
 ### License
 
