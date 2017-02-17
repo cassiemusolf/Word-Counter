@@ -1,12 +1,22 @@
 .jumbotron {
-  margin-top: 50px;
   background-image: url(http://powellong.com/data/wallpapers/31/WDF_785057.png);
   background-position: center;
   background-size: contain;
-  min-height: 250px;
-  min-width: 400px;
+  min-height: 350px;
   text-align: center;
+  padding-top: 100px;
   color: white;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  border-bottom: dashed thick #006400;
+  padding-bottom: 100px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 button {
@@ -23,6 +33,4 @@ label {
 
 .container {
   font-family: 'Cinzel Decorative', cursive;
-  /*font-family: 'Gruppo', cursive;*/
-  /*font-family: 'Life Savers', cursive;*/
 }

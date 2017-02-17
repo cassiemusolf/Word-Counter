@@ -1,15 +1,14 @@
 @{
-Layout="Shared/_Layout.cshtml";
+    Layout="Shared/_Layout.cshtml";
 }
 
-<div class="container">
 <div class="jumbotron">
-<h1>Results</h1>
+    <h1>Results</h1>
 </div>
+<div class="container">
+    <h2>Your word shows up <strong>@Model</strong> times in the text!</h2>
 
-<h2>Your word shows up @Model times in the text!</h2>
-
-<form action="/new" method="post">
-<button type="submit" class="btn-lg btn-success">Start Again!</button>
-</form>
+    <form action="/new" method="post">
+    <button type="submit" class="btn-lg btn-success">Start Again!</button>
+    </form>
 </div>

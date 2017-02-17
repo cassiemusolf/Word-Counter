@@ -1,21 +1,25 @@
 @{
-Layout="Shared/_Layout.cshtml";
+    Layout="Shared/_Layout.cshtml";
 }
 
-<div class="container">
 <div class="jumbotron">
-<h1>Find Your Word</h1>
+    <h1>Find Your Word</h1>
 </div>
 
-<div class="form-group" id="one">
-<form action="/results" method="post">
-  <label for="user-string">Enter a Sentence</label>
-  <input id="user-string" class="form-control input-lg" name="user-string" type="text">
+<div class="border">
 </div>
-  <div class="form-group">
-  <label for="find-word">Enter the Word You Want to Find</label>
-  <input id="find-word" class="form-control input-lg" name="find-word" type="text">
-  </div>
-  <button type="submit" class="btn-lg btn-success">Find Your Word!</button>
-</form>
+
+<div class="container">
+    <div class="form-group" id="one">
+    <form action="/results" method="post">
+        <label for="user-string">Enter a Sentence or Paragraph:</label>
+        <input id="user-string" class="form-control input-lg" name="user-string" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="find-word">Enter the Word You Want to Find in That Text:</label>
+        <input id="find-word" class="form-control input-lg" name="find-word" type="text">
+    </div>
+        <button type="submit" class="btn-lg btn-success">Find Your Word!</button>
+    </form>
 <div>
