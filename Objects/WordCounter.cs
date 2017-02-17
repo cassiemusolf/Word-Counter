@@ -23,7 +23,7 @@ namespace WordCounterApp.Objects
     //Main Method
     public string CountRepeats()
     {
-      return "b";
+      return _userString;
     }
   }
 }

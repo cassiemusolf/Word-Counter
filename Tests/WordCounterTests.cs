@@ -16,5 +16,16 @@ namespace WordCounterApp.Objects
       //Assert
       Assert.Equal("a", result);
     }
+    [Fact]
+    public void CountRepeats_ReturnUserWord_Word()
+    {
+      //Arrange
+      string userWord = "dog";
+      RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
+      //Act
+      string result = testRepeatCounter.CountRepeats();
+      //Assert
+      Assert.Equal("dog", result);
+    }
   }
 }
