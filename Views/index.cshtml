@@ -1,9 +1,21 @@
-<h1>Repeated Word Counter</h1>
+@{
+Layout="Shared/_Layout.cshtml";
+}
 
+<div class="container">
+<div class="jumbotron">
+<h1>Repeated Word Counter</h1>
+</div>
+
+<div class="form-group">
 <form action="/results" method="post">
   <label for="user-string">Enter a Sentence</label>
-  <input id="user-string" name="user-string" type="text">
+  <input id="user-string" class="form-control input-lg" name="user-string" type="text">
+</div>
+  <div class="form-group">
   <label for="find-word">Enter the Word You Want to Find</label>
-  <input id="find-word" name="find-word" type="text">
-  <button type="submit">Find Your Word!</button>
+  <input id="find-word" class="form-control input-lg" name="find-word" type="text">
+  </div>
+  <button type="submit" class="btn-lg btn-primary">Find Your Word!</button>
 </form>
+<div>

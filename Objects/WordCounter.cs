@@ -34,7 +34,7 @@ namespace WordCounterApp.Objects
     {
       string[] array = GetUserString().ToLower().Split(' ', '.', ',', '!', '?');
 
-      string searchWord = GetFindWord();
+      string searchWord = GetFindWord().ToLower();
       int result = 0;
       foreach(string word in array)
       {
