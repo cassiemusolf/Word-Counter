@@ -31,12 +31,12 @@ namespace WordCounterApp.Objects
     public void CountRepeats_ReturnCountForWord_Number()
     {
       //Arrange
-      string userWord = "cat dog";
+      string userWord = "cat cat cat";
       RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
       //Act
-      string result = testRepeatCounter.CountRepeats();
+      int result = testRepeatCounter.CountRepeats();
       //Assert
-      Assert.Equal("cat dog", result);
+      Assert.Equal(3, result);
     }
   }
 }

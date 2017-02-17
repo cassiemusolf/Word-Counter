@@ -21,15 +21,16 @@ namespace WordCounterApp.Objects
     }
 
     //Main Method
-    public string CountRepeats()
+    public int CountRepeats()
     {
       string[] array = GetUserString().Split(' ');
 
-        foreach (string newString in array)
+      int result = 0;
+        foreach(string word in array)
         {
-          return newString;
+          result += 1;
         }
-        return null;
+        return result;
   }
   }
 }
