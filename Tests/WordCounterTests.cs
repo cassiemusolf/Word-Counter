@@ -64,12 +64,23 @@ namespace WordCounterApp.Objects
     public void CountRepeats_ReturnCountForToLowercase_Number()
     {
       //Arrange
-      string userWord = "I have a DOG named Bozo. My dog loves to go on hikes! I love my dog .";
+      string userWord = "I have a DOG named Bozo. My dog loves to go on hikes! My dog is awesome.";
       RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
       //Act
       int result = testRepeatCounter.CountRepeats();
       //Assert
       Assert.Equal(3, result);
+    }
+    [Fact]
+    public void CountRepeats_ReturnCountForSpecialCharacters_Number()
+    {
+      //Arrange
+      string userWord = "I have a DOG named Bozo. My dog loves to go on hikes! I love my Dog! Dog, Dog, DOg!";
+      RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
+      //Act
+      int result = testRepeatCounter.CountRepeats();
+      //Assert
+      Assert.Equal(6, result);
     }
   }
 }
