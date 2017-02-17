@@ -4,25 +4,24 @@ using System.Collections.Generic;
 
 namespace WordCounterApp.Objects
 {
-  public class HomeModule : NancyModule
-  {
-    public HomeModule()
+    public class HomeModule : NancyModule
     {
-      Get["/"] = _ => {
-        return View["index.cshtml"];
-      };
-      Post["/results"] = _ => {
-        string userString = Request.Form["user-string"];
-        string findWord = Request.Form["find-word"];
-        RepeatCounter newCounter = new RepeatCounter(userString, findWord);
-        int result = newCounter.CountRepeats();
-        return View["results.cshtml", result];
-      };
+        public HomeModule()
+        {
+            Get["/"] = _ => {
+                return View["index.cshtml"];
+            };
+            Post["/results"] = _ => {
+                string userString = Request.Form["user-string"];
+                string findWord = Request.Form["find-word"];
+                RepeatCounter newCounter = new RepeatCounter(userString, findWord);
+                int result = newCounter.CountRepeats();
+                return View["results.cshtml", result];
+            };
 
-      Post["/new"] = _ => {
-        return View["index.cshtml"];
-      };
-
+            Post["/new"] = _ => {
+                return View["index.cshtml"];
+            };
+        }
     }
-  }
 }
