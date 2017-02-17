@@ -26,11 +26,14 @@ namespace WordCounterApp.Objects
       string[] array = GetUserString().Split(' ');
 
       int result = 0;
-        foreach(string word in array)
+      foreach(string word in array)
+      {
+        if (word == "dog")
         {
-          result += 1;
-        }
-        return result;
-  }
+        result += 1;
+      }
+    }
+      return result;
+    }
   }
 }

@@ -49,5 +49,16 @@ namespace WordCounterApp.Objects
       //Assert
       Assert.Equal(4, result);
     }
+    [Fact]
+    public void CountRepeats_ReturnCountForMatchingWord_Number()
+    {
+      //Arrange
+      string userWord = "I have a dog named Bozo. My dog loves to go on hikes";
+      RepeatCounter testRepeatCounter = new RepeatCounter(userWord);
+      //Act
+      int result = testRepeatCounter.CountRepeats();
+      //Assert
+      Assert.Equal(13, result);
+    }
   }
 }
