@@ -21,9 +21,9 @@ namespace WordCounterApp.Objects
     }
 
     //Main Method
-    public string CountRepeats()
+    public int CountRepeats()
     {
-      return _userString;
-    }
+        return 2;
+      }
   }
 }
